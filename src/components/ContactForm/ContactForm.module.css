@@ -1,0 +1,45 @@
+.form {
+  max-width: 240px;
+  min-height: 120px;
+  border: 1px solid black;
+  border-radius: 4px;
+  padding: 12px;
+  margin-bottom: 16px;
+}
+
+.field {
+  border-radius: 4px;
+  border: 1px solid black;
+  height: 24px;
+  outline: none;
+}
+
+.field:hover {
+  border: 1px solid navy;
+}
+
+.error {
+  color: red;
+  font-size: 12px;
+}
+
+.containerField {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.btn {
+  width: 90px;
+  height: 28px;
+  background-color: rgba(210, 209, 219, 0.917);
+  color: black;
+  border: none;
+  border-radius: 4px;
+  margin-top: 12px;
+}
+
+.btn:hover {
+  background-color: rgb(197, 197, 212);
+  transition: background-color 0.2s linear;
+}

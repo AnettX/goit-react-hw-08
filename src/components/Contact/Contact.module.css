@@ -1,0 +1,32 @@
+.btn {
+  width: 72px;
+  height: 24px;
+  background-color: rgba(210, 209, 219, 0.917);
+  color: black;
+  border: none;
+  border-radius: 4px;
+  margin-top: 12px;
+}
+
+.btn:hover {
+  background-color: rgb(197, 197, 212);
+  transition: background-color 0.2s linear;
+}
+
+.contactItemContainer {
+  min-width: 250px;
+  max-height: 72px;
+  border: 1px solid black;
+  border-radius: 4px;
+  padding: 12px;
+  margin-bottom: 16px;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  align-items: flex-start;
+  column-gap: 10px;
+}
+
+.contactItemContainer .btn {
+  align-self: flex-end;
+}
