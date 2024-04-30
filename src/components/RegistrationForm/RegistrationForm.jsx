@@ -27,14 +27,13 @@ const FORM_INITIAL_VALUES = {
 
 const RegistrationForm = () => {
   const dispatch = useDispatch();
-
   const handleSubmit = (values, actions) => {
     console.log("handleSubmit: ", values);
     dispatch(register(values));
     actions.resetForm();
   };
 
-  //about password visibility
+  // about password visibility
   const showPassword = useSelector((state) => state.password.showPassword);
   const handleTogglePassword = () => {
     dispatch(togglePasswordVisibility());

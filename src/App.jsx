@@ -36,22 +36,23 @@ function App() {
         <Route
           path="/register"
           element={
-            <RestrictedRoute>
-              <RegistrationPage />
-            </RestrictedRoute>
+            <RestrictedRoute
+              component={<RegistrationPage />}
+              redirectTo="/contacts"
+            />
           }
         />
         <Route
           path="/login"
           element={
-            <RestrictedRoute>
-              <LoginPage />
-            </RestrictedRoute>
+            <RestrictedRoute component={<LoginPage />} redirectTo="/contacts" />
           }
         />
         <Route
           path="/contacts"
-          element={<PrivateRoute component={<ContactsPage />} redirectTo="/" />}
+          element={
+            <PrivateRoute component={<ContactsPage />} redirectTo="/login" />
+          }
         />
       </Routes>
     </Layout>

@@ -19,7 +19,7 @@ const authSlice = createSlice({
         state.isLoading = false;
         state.userData = action.payload.user;
         state.token = action.payload.token;
-        state.isLoggedIn = true;
+        state.isSignedIn = true;
       })
       .addCase(register.rejected, (state) => {
         state.isLoading = false;
@@ -29,7 +29,7 @@ const authSlice = createSlice({
         state.isLoading = false;
         state.userData = action.payload.user;
         state.token = action.payload.token;
-        state.isLoggedIn = true;
+        state.isSignedIn = true;
       })
       .addCase(logOut.fulfilled, () => {
         return INITAL_STATE;
@@ -42,7 +42,7 @@ const authSlice = createSlice({
       })
       .addCase(refreshUser.pending, (state) => {
         state.isRefreshing = true;
-        state.isLoading = true;
+        // state.isLoading = true;
       })
       .addMatcher(
         isAnyOf(
@@ -66,6 +66,7 @@ const authSlice = createSlice({
         (state, action) => {
           state.isLoading = false;
           state.isError = action.payload;
+          state.isRefreshing = false;
         }
       );
   },

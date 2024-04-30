@@ -3,6 +3,9 @@ body {
   font-family: sans-serif;
   line-height: 1.5;
   list-style-type: none;
+  background: #9796f0;
+  background: -webkit-linear-gradient(to left, #fbc7d4, #9796f0);
+  background: linear-gradient(to left, #fbc7d4, #9796f0);
 }
 
 h1,

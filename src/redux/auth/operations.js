@@ -55,7 +55,7 @@ export const refreshUser = createAsyncThunk(
       const state = thunkAPI.getState();
       const token = state.auth.token;
       if (!token) {
-        return thunkAPI.rejectWithValue("Залогіньтеся!");
+        return thunkAPI.rejectWithValue("Please log in!");
       }
 
       setToken(token);
