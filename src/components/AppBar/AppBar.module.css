@@ -1,0 +1,9 @@
+header {
+  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+  border-bottom: 1px solid grey;
+  box-shadow: 10px 10px 17px -7px rgba(0, 0, 0, 0.75);
+  margin-bottom: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}

@@ -56,10 +56,9 @@ dispatch - це функція, яка відправляє команду(actio
 action - це об'єкт, який має як мінімум містити поле type, може містити ще якусь
 корисну інфомрацію в полі payload (об'єкт інстукції).
 
-reducer - це чистя функція, яка приймає в себе state, action та повертає змінений,
-або не змінений state. -->
+reducer - це чистя функція, яка приймає в себе state, action та повертає змінений, або не змінений state. -->
 
----
+## password dfgghghg
 
 This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
 
