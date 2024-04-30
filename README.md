@@ -58,7 +58,7 @@ action - це об'єкт, який має як мінімум містити п
 
 reducer - це чистя функція, яка приймає в себе state, action та повертає змінений, або не змінений state. -->
 
-## password dfgghghg
+<!-- test password: dfgghghg -->
 
 This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
 
