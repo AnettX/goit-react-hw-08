@@ -13,7 +13,6 @@ import {
   PURGE,
   REGISTER,
 } from "redux-persist";
-import { passwordReducer } from "./password/slice";
 
 const authPersistConfig = {
   key: "auth",
@@ -26,7 +25,6 @@ export const store = configureStore({
     contacts: contactsReducer,
     filters: filtersReducer,
     auth: persistReducer(authPersistConfig, authReducer),
-    password: passwordReducer,
   },
   middleware: (getDefaultMiddleware) =>
     getDefaultMiddleware({

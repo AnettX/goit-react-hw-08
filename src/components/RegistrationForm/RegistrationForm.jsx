@@ -1,10 +1,9 @@
 import { ErrorMessage, Field, Form, Formik } from "formik";
 import * as Yup from "yup";
 import css from "./RegistrationForm.module.css";
-import { useDispatch, useSelector } from "react-redux";
-// import { addContact } from "../../redux/contactsOps";
+import { useDispatch } from "react-redux";
 import { register } from "../../redux/auth/operations";
-import { togglePasswordVisibility } from "../../redux/password/slice";
+import usePasswordVisibilityToggle from "../../hooks/usePasswordVisibilityToggle";
 
 const registerUserSchema = Yup.object({
   name: Yup.string()
@@ -33,11 +32,7 @@ const RegistrationForm = () => {
     actions.resetForm();
   };
 
-  // about password visibility
-  const showPassword = useSelector((state) => state.password.showPassword);
-  const handleTogglePassword = () => {
-    dispatch(togglePasswordVisibility());
-  };
+  const [showPassword, setShowPassword] = usePasswordVisibilityToggle();
 
   return (
     <div>
@@ -70,10 +65,7 @@ const RegistrationForm = () => {
                 className={css.field}
                 placeholder="Enter your password"
               />
-              <span
-                onClick={handleTogglePassword}
-                className={css.passwordToggle}
-              >
+              <span onClick={setShowPassword} className={css.passwordToggle}>
                 {showPassword ? "🙊" : "🙈"}
               </span>
             </div>
