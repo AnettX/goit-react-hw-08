@@ -42,7 +42,12 @@ const LoginForm = () => {
           <label className={css.containerField}>
             <span className={css.labelText}>Email</span>
 
-            <Field type="email" name="email" className={css.field} />
+            <Field
+              type="email"
+              name="email"
+              className={css.field}
+              placeholder="Enter your email"
+            />
             <ErrorMessage component="p" name="email" className={css.error} />
           </label>
 

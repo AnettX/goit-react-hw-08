@@ -5,6 +5,7 @@
   border-radius: 4px;
   padding: 12px;
   margin-bottom: 16px;
+  box-shadow: 10px 10px 17px -7px rgba(0, 0, 0, 0.75);
 }
 
 .field {
@@ -12,6 +13,8 @@
   border: 1px solid black;
   height: 24px;
   outline: none;
+  margin-bottom: 10px;
+  padding-left: 8px;
 }
 
 .field:hover {
@@ -32,15 +35,16 @@
 .btn {
   width: 90px;
   height: 28px;
-  background-color: rgba(210, 209, 219, 0.917);
+  background-color: rgba(219, 219, 233, 0.917);
   color: black;
   border: none;
   border-radius: 4px;
   margin-top: 12px;
+  margin-bottom: 12px;
 }
 
 .btn:hover {
-  background-color: rgb(197, 197, 212);
+  background-color: rgb(246, 246, 253);
   transition: background-color 0.2s linear;
 }
 
@@ -53,7 +57,7 @@
 
 .passwordToggle {
   position: absolute;
-  top: 50%;
+  top: 45%;
   right: 5px;
   cursor: pointer;
 }

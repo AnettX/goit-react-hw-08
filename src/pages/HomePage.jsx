@@ -1,5 +1,7 @@
+import Home from "../components/Home/Home";
+
 const HomePage = () => {
-  return <div>Phonebook welcome page 💁‍♀️</div>;
+  return <Home />;
 };
 
 export default HomePage;

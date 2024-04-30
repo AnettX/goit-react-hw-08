@@ -1,0 +1,17 @@
+.userWelcomeName {
+  margin-right: 24px;
+}
+
+.logoutBtn {
+  display: flex;
+  padding: 12px 38px;
+  font-size: 14px;
+  background-color: transparent;
+  color: black;
+  border: none;
+  transition: all 0.3s;
+}
+
+.logoutBtn:hover {
+  font-weight: bold;
+}

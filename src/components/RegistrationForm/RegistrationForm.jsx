@@ -46,13 +46,24 @@ const RegistrationForm = () => {
           <label className={css.containerField}>
             <span className={css.labelText}>Name</span>
 
-            <Field type="text" name="name" className={css.field} />
+            <Field
+              type="text"
+              name="name"
+              className={css.field}
+              placeholder="Enter your name"
+            />
             <ErrorMessage component="p" name="name" className={css.error} />
           </label>
           <label className={css.containerField}>
             <span className={css.labelText}>Email</span>
 
-            <Field type="email" name="email" className={css.field} />
+            <Field
+              type="email"
+              name="email"
+              className={css.field}
+              placeholder="Enter your email"
+            />
+
             <ErrorMessage component="p" name="email" className={css.error} />
           </label>
 
