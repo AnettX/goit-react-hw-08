@@ -1,42 +1,4 @@
-# React + Vite. Redux та Redux Toolkit
-
-## Перша частина ДЗ: Redux
-
-1. npm create vite@latest
-2. npm install axios
-3. npm install react-router-dom
-4. Деплой на Vercel: add vercel.json
-5. Add Redux library to the project:
-
-- npm install redux
-- npm install react-redux
-
-6. Redux DevTools: npm install @redux-devtools/extension
-7. Створення store та підключення до проєкту: src/redux/store.js
-
-<!-- ## Мінуси використання чистого Redux:
-
--зромісткість
--іммутабельний спосіб зміни даних -->
-
-## Друга частина ДЗ: Redux Toolkit
-
-Рефакторинг першої частини дз
-
-1. Встановлення бібліотеки: npm install @reduxjs/toolkit
-2. пакет базового редаксу видалити з dependencies package.json:
-   npm uninstall @redux-devtools/extension
-   npm uninstall redux
-   !react-redux - залишається!
-3. createSlice
-4. Використання бібліотеки Redux Persist для збереження масиву контактів у локальному сховищі: npm install redux-persist
-
-# Додатково:
-
-Налаштування .eslintrc.cjs, до блоку rules додати властивість react/prop-types із значенням 0.
-"react/prop-types": 0
-
----
+# React + Vite. Phonebook. Реєстрація та логін користувача
 
 <!-- # Алгоритм встановлення і роботи з редаксом.
 
