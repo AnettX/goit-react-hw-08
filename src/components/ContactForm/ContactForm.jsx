@@ -3,6 +3,7 @@ import * as Yup from "yup";
 import css from "./ContactForm.module.css";
 import { useDispatch } from "react-redux";
 import { addContact } from "../../redux/contacts/operations";
+import toast, { Toaster } from "react-hot-toast";
 
 const contactsSchema = Yup.object({
   name: Yup.string()
@@ -33,6 +34,8 @@ const ContactForm = () => {
     actions.resetForm();
   };
 
+  const notify = () => toast.success("Contact added successfully");
+
   return (
     <Formik
       initialValues={FORM_INITIAL_VALUES}
@@ -54,9 +57,10 @@ const ContactForm = () => {
           <ErrorMessage component="p" name="number" className={css.error} />
         </label>
 
-        <button type="submit" className={css.btn}>
+        <button type="submit" className={css.btn} onClick={notify}>
           Add contact
         </button>
+        <Toaster />
       </Form>
     </Formik>
   );

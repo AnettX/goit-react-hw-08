@@ -5,12 +5,14 @@ import { useState } from "react";
 import ConfirmModal from "../ConfirmModal";
 import { useDispatch } from "react-redux";
 import { deleteContact } from "../../redux/contacts/operations";
+import toast from "react-hot-toast";
 
 const Contact = ({ contact }) => {
   const dispatch = useDispatch();
   const onDeleteContact = () => {
     dispatch(deleteContact(contact.id));
     setIsModalOpen(false);
+    toast.success("Successfully deleted!");
   };
 
   const [isModalOpen, setIsModalOpen] = useState(false);
