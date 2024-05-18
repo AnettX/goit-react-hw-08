@@ -13,7 +13,7 @@ const SearchBox = () => {
 
   return (
     <section className={css.sectionSearchBox}>
-      <p>Find contacts by name</p>
+      <p>Find contacts by name or number</p>
       <input
         type="text"
         onChange={onChangeContact}
