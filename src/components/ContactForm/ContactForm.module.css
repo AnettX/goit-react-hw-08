@@ -1,17 +1,18 @@
 .form {
   max-width: 240px;
   min-height: 120px;
-  border: 1px solid black;
   border-radius: 4px;
   padding: 12px;
   margin-bottom: 16px;
+  box-shadow: 10px 10px 39px 0px rgba(0, 0, 0, 0.75);
 }
 
 .field {
   border-radius: 4px;
   border: 1px solid black;
-  height: 24px;
+  height: 30px;
   outline: none;
+  padding-left: 10px;
 }
 
 .field:hover {

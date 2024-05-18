@@ -9,7 +9,6 @@
 .contactItemContainer {
   min-width: 250px;
   max-height: 72px;
-  border: 1px solid black;
   border-radius: 4px;
   padding: 12px;
   margin-bottom: 16px;
@@ -17,7 +16,12 @@
   flex-direction: column;
   flex-wrap: wrap;
   align-items: flex-start;
-  column-gap: 10px;
+  box-shadow: 10px 10px 39px 0px rgba(0, 0, 0, 0.75);
+  transition: transform 0.3s;
+}
+.contactItemContainer:hover,
+.contactItemContainer:focus {
+  transform: scale(1.05);
 }
 
 .contactItemContainer .btn {
