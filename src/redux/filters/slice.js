@@ -4,6 +4,7 @@ import { selectNameFilter } from "./selectors";
 
 const INITIAL_STATE = {
   name: "",
+  number: "",
 };
 
 const filtersSlice = createSlice({
@@ -19,8 +20,10 @@ const filtersSlice = createSlice({
 export const selectFilteredContacts = createSelector(
   [selectContacts, selectNameFilter],
   (contacts, filters) => {
-    return contacts.filter((contact) =>
-      contact.name?.toLowerCase().includes(filters.toLowerCase())
+    return contacts.filter(
+      (contact) =>
+        contact.name?.toLowerCase().includes(filters.toLowerCase()) ||
+        contact.number?.includes(filters)
     );
   }
 );
